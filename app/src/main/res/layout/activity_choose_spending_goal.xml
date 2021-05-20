@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/ChooseMonthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter month"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/ChooseMonthEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="month"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/ChooseAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter amount"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/ChooseAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="amount"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/SaveSpendingGoalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"/>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/TransactionNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction name"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/TransactionNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="transaction name"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/TransactionLocationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/TransactionLocationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="location"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/TransactionDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/TransactionDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="date"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/TransactionAmountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/TransactionAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="amount"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/TransactionCategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:layout_marginBottom="20dp"/>
+<!--
+    <EditText
+        android:id="@+id/TransactionCategoryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="category "
+        android:layout_marginBottom="20dp"/>
+-->
+    <Button
+        android:id="@+id/TransactionAddButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD"/>
+
+    <Button
+        android:id="@+id/AddNewCategoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="new category" />
+
+</LinearLayout>
