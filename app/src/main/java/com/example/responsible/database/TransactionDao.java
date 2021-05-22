@@ -12,7 +12,7 @@ import java.util.List;
 
 @Dao
 public interface TransactionDao {
-    @Query("SELECT * FROM `transaction`")
+    @Query("SELECT * FROM `transaction` order by date desc")
     List<Transaction> getAll();
 
 //    @Query("SELECT * FROM category WHERE category LIKE :first ")

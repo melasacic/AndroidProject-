@@ -1,10 +1,13 @@
 package com.example.responsible;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 
@@ -42,5 +45,23 @@ public class CategoryListActivity extends AppCompatActivity {
         categoryListView.setAdapter(categoryListAdapter);
 
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.Overview_menu:
+                Intent intent = new Intent(CategoryListActivity.this, OverviewActivity.class);
+                startActivity(intent);
+                return true;
+        }
+
+        return true;
     }
 }

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="20dp">
+
+    <TextView
+       android:id="@+id/TransactionLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction overview"/>
+
+    <ListView
+        android:id="@+id/TransactionOverviewListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/SpendingGoalLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spending goal overview"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/SpendingGoalTextViewOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/SpentTextViewOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/CategoryLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category overview"/>
+
+    <ListView
+        android:id="@+id/CategoryTransactionListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+    android:id="@+id/AddTransactionOverview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:text="Add transaction"/>
+
+    <Button
+        android:id="@+id/AddSpendingOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add spending goal"/>
+
+    <Button
+        android:id="@+id/AddCategoryOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add category"/>
+
+
+</LinearLayout>

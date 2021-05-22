@@ -15,6 +15,8 @@ public interface SpendingDao {
     @Query("SELECT * FROM spending")
     List<Spending> getAll();
 
+   @Query("SELECT * FROM spending WHERE spendingDate = :date")
+    Spending getForDate(long date);
 
 
     @Insert
@@ -22,5 +24,7 @@ public interface SpendingDao {
 
     @Delete
     void delete(Spending spending);
+
+
 
 }
