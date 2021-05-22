@@ -40,12 +40,13 @@
         android:text="Date"
         android:layout_marginBottom="20dp"/>
 
-    <EditText
-        android:id="@+id/TransactionDateEditText"
+    <Button
+        android:id="@+id/PickADateButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="date"
-        android:layout_marginBottom="20dp"/>
+        android:text="choose"/>
+
+
 
     <TextView
         android:id="@+id/TransactionAmountTextView"
@@ -67,24 +68,19 @@
         android:layout_height="wrap_content"
         android:text="Category"
         android:layout_marginBottom="20dp"/>
-<!--
-    <EditText
-        android:id="@+id/TransactionCategoryEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="category "
-        android:layout_marginBottom="20dp"/>
--->
-    <Button
-        android:id="@+id/TransactionAddButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ADD"/>
+
 
     <Button
         android:id="@+id/AddNewCategoryButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="new category" />
+        android:text="choose" />
+
+    <Button
+        android:id="@+id/TransactionAddButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="SAVE"/>
 
 </LinearLayout>

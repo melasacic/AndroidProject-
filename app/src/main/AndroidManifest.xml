@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ChooseSpendingGoalActivity"></activity>
+        <activity android:name=".AddNewTransactionActivity"></activity>
 
-        <activity android:name=".SpendingOverwievActivity">
+        <activity android:name=".TransactionListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
