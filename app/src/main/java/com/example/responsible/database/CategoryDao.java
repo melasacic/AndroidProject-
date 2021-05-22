@@ -14,8 +14,8 @@ public interface CategoryDao {
     @Query("SELECT * FROM category")
     List<Category> getAll();
 
-    @Query("SELECT * FROM category WHERE category LIKE :first ")
-    Category findByName(String first);
+//    @Query("SELECT * FROM category WHERE category LIKE :first ")
+//    Category findByName(String first);
 
     @Insert
     void insertAll(Category... categories);

@@ -6,22 +6,16 @@
     android:padding="20dp">
 
     <TextView
-       android:id="@+id/categoryInList"
+        android:id="@+id/spendingInList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <ImageView
-        android:id="@+id/DeleteImageView"
+        android:id="@+id/DeleteSpendingImageView"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:src="@drawable/ic_delete_black_with_white_normal_foreground"
         android:layout_alignParentRight="true"/>
 
 
-
-
-
-
-
 </RelativeLayout>
-

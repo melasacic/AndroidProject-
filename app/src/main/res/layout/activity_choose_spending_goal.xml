@@ -10,15 +10,14 @@
         android:id="@+id/ChooseMonthTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter month"
+        android:text="Choose month"
         android:layout_marginBottom="20dp"/>
 
-    <EditText
-        android:id="@+id/ChooseMonthEditText"
+    <Button
+       android:id="@+id/CalendarButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="month"
-        android:layout_marginBottom="20dp"/>
+        android:text="choose"/>
 
     <TextView
         android:id="@+id/ChooseAmountTextView"

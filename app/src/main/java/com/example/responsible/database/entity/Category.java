@@ -6,9 +6,9 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Category {
-    @PrimaryKey
+    @PrimaryKey (autoGenerate = true) // sam generise id
     public int id;
 
-    @ColumnInfo (name="category")
-    public String category;
+    @ColumnInfo (name="name")
+    public String name;
 }

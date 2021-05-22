@@ -10,19 +10,23 @@ import android.widget.TextView;
 
 import com.example.responsible.database.AppDatabase;
 import com.example.responsible.database.entity.Category;
+import com.example.responsible.database.entity.Spending;
 
-import java.util.ArrayList;
+import org.joda.time.DateTime;
+
+import java.util.Date;
 import java.util.List;
 
-public class CategoryListAdapter extends BaseAdapter {
-    private List<Category> categories;
+public class SpendingGoalAdapter extends BaseAdapter {
+
+    private List<Spending> spendings;
     private Context context;
     private View view;
     private ViewGroup viewGroup;
     private AppDatabase db;
 
-    public CategoryListAdapter (List<Category> categories, Context context, AppDatabase db){
-        this.categories=categories;
+    public SpendingGoalAdapter(List<Spending> spending, Context context, AppDatabase db){
+        this.spendings=spending;
         this.context=context;
         this.db=db;
     }
@@ -30,13 +34,13 @@ public class CategoryListAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        int size=categories.size();
+        int size=spendings.size();
         return  size;
     }
 
     @Override
     public Object getItem(int position) {
-        return categories.get(position);
+        return spendings.get(position);
     }
 
     @Override
@@ -46,23 +50,22 @@ public class CategoryListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-       //if(convertView==null){
-            convertView= LayoutInflater.from(context).inflate(R.layout.category_list_item, parent, false);
+        convertView= LayoutInflater.from(context).inflate(R.layout.activity_spending_overwiev_item, parent, false);
 
-       //}
+        TextView spendingText=convertView.findViewById(R.id.spendingInList);
+        ImageView deleteImageView=convertView.findViewById(R.id.DeleteSpendingImageView);
 
-        TextView categoryText=convertView.findViewById(R.id.categoryInList);
-        ImageView deleteImageView=convertView.findViewById(R.id.DeleteImageView);
+        Spending spending=(Spending) getItem(position);
+        String dateFormated=new DateTime (spending.spendingDate).toString("MMM, yyyy");
+        spendingText.setText(dateFormated+" - Amount "+spending.spendingAmount);
 
-        Category category=(Category)getItem(position);
-        categoryText.setText(category.name);
 
 
         deleteImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                db.categoryDao().delete(category);
-                categories=db.categoryDao().getAll();
+                db.spendingDao().delete(spending);
+                spendings=db.spendingDao().getAll();
                 notifyDataSetChanged();
             }
         });
